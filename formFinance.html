@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="formFinance.css">
+	<title>Document</title>
+</head>
+<body>
+		<div class="formWrapper">
+				<label for="sum">Сума</label>
+			<input
+				onchange="handleSubmit"
+				id="sum" 
+				type="number" 
+				placeholder="сумма грошей"
+				required
+			>
+			<br><br>
+			<label for="price">Цiна</label>
+			<input
+				onchange="handleSubmit"
+				id="price" 
+				type="number" 
+				placeholder="цiна товару"
+				required 
+			>
+			<br><br>
+			<button id="btn">Повернути решту</button>
+		</div>
+
+		<h3 class="balance">
+			Ваша решта:
+			 <br><br>
+			 <span id="resultValue"></span>
+		</h3>
+
+	<script src="formFinance.js"></script>
+</body>
+</html>
